@@ -23,3 +23,16 @@ except:
     !unzip -o -j moviedataset.zip 
 ```
 
+and the easy version without any zipping
+
+```python
+def downloadFile(url,fileName):
+    fname = fileName
+    url = url + "/" +fileName
+    r = requests.get(url)
+    open(fname , 'wb').write(r.content)
+    print('Data downloaded!')
+    return
+
+downloadFile("https://cocl.us/new_york_dataset",'newyork_data.json')
+```
