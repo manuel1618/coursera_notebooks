@@ -26,6 +26,7 @@ except:
 and the easy version without any zipping
 
 ```python
+import requests
 def downloadFile(url,fileName):
     fname = fileName
     url = url + "/" +fileName
