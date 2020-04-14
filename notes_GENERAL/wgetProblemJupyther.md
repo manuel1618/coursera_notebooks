@@ -37,3 +37,10 @@ def downloadFile(url,fileName):
 
 downloadFile("https://cocl.us/new_york_dataset",'newyork_data.json')
 ```
+
+Eventuell reicht auch das nur:
+
+'''python
+Download: https://eternallybored.org/misc/wget/
+put it into sys32
+'''
